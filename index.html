@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./login_page.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./clear_style/reset.css">
     <link rel="stylesheet" href="./icon_font/css/all.css">
-    <script src="./login_page.js"></script>
+    <script src="./index.js"></script>
     <title>login_page</title>
 </head>
 <body>
     <div class="outer">
-        <form action="">
+        <form action="/carrots-admin-ajax/a/login" method="POST">
             <div id="title">后台登录</div>
 
             <div class="ipt">
                 <div class="fas fa-user-tie" style="font-size: 18px; color: rgb(209, 209, 209); margin-left: 5px;"></div>
-                <input type="text" id="user" placeholder="账号">
+                <input type="text" id="user" placeholder="账号" name="userName">
             </div>
 
             <div class="ipt">
                 <div class="fas fa-lock" style="font-size: 18px; color: rgb(209, 209, 209); margin-left: 5px;"></div>
-                <input type="password" id="psd" placeholder="密码">
+                <input type="password" id="psd" placeholder="密码" name="psdName">
             </div>
 
             <div id="insert"></div>
